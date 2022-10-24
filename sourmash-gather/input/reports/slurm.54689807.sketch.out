@@ -1,0 +1,26 @@
+==========================================
+SLURM_JOB_ID = 54689807
+SLURM_NODELIST = bm8
+==========================================
+Name                : sketch
+User                : baumlerc
+Account             : ctbrowngrp
+Partition           : bmm
+Nodes               : bm8
+Cores               : 2
+GPUs                : 0
+State               : COMPLETED
+ExitCode            : 0:0
+Submit              : 2022-10-19T19:37:10
+Start               : 2022-10-19T19:37:11
+End                 : 2022-10-19T21:44:42
+Waited              : 00:00:01
+Reserved walltime   : 06:00:00
+Used walltime       : 02:07:31
+Used CPU time       : 02:06:30
+% User (Computation): 99.74%
+% System (I/O)      :  0.27%
+Mem reserved        : 10G
+Max Mem used        : 79.86M (bm8)
+Max Disk Write      : 10.24K (bm8)
+Max Disk Read       : 12.56M (bm8)
