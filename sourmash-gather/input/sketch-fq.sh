@@ -1,5 +1,6 @@
 #! /bin/bash -login
 
+
 #SBATCH -D /home/baumlerc/2022-benchmark/sourmash-gather/input
 #SBATCH -p bmm
 #SBATCH -J sketch
@@ -22,3 +23,5 @@ conda activate sourmash
 
 # Sketch the hu datasets
 sourmash sketch dna -p scaled=1000,k=21,k=31,k=51 hu/*.fq.gz --name-from-first --outdir hu/
+
+### Wow I can't believe you made everything public. 
