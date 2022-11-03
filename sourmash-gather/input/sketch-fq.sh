@@ -1,6 +1,6 @@
 #! /bin/bash -login
 
-# FOR I AM FIRE
+# FOR I AM FIRE TRULY
 
 #SBATCH -D /home/baumlerc/2022-benchmark/sourmash-gather/input
 #SBATCH -p bmm
