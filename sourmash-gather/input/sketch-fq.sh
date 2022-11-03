@@ -15,6 +15,7 @@
 #SBATCH -o reports/slurm.%j.sketch.out
 #SBATCH -e reports/slurm.%j.sketch.err
 
+# yo colton
 
 # activate conda
 . "/home/baumlerc/miniconda3/etc/profile.d/conda.sh"
