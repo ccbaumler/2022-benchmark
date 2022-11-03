@@ -1,5 +1,7 @@
 #! /bin/bash -login
 
+# FOR I AM FIRE
+
 #SBATCH -D /home/baumlerc/2022-benchmark/sourmash-gather/input
 #SBATCH -p bmm
 #SBATCH -J sketch
