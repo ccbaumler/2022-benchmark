@@ -20,10 +20,10 @@
 conda activate benchmark 
 
 #gather 
-sourmash gather input/hu/SRR1976948.abundtrim.fq.gz.sig /group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip -o output/output.csv
+py-spy record -o output/profile.svg -- sourmash gather input/hu/SRR1976948.abundtrim.fq.gz.sig /group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip -o output/output.csv
 
 #store process id of sourmash command as variable
-PID=$!
+#PID=$!
 
 #pyspy record
-py-spy record -o svg_output/profile.svg --pid $PID
+#py-spy record -o svg_output/profile.svg --pid $PID
