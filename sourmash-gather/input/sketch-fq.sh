@@ -1,5 +1,7 @@
 #! /bin/bash -login
 
+# FOR I AM FIRE TRULY
+
 #SBATCH -D /home/baumlerc/2022-benchmark/sourmash-gather/input
 #SBATCH -p bmm
 #SBATCH -J sketch
@@ -13,6 +15,7 @@
 #SBATCH -o reports/slurm.%j.sketch.out
 #SBATCH -e reports/slurm.%j.sketch.err
 
+# yo colton
 
 # activate conda
 . "/home/baumlerc/miniconda3/etc/profile.d/conda.sh"
