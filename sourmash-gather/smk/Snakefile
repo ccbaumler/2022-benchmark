@@ -1,0 +1,22 @@
+#run in sourmash-gather directory
+
+#SAMPLES, =glob_wildcards("input/hu/{sample}.abundtrim.fq.gz.sig")
+#print(f"samples are:{SAMPLES}")
+SAMPLES = ["SRR1976948", "SRR1977296","SRR1977357","SRR1977249","SRR1977304","SRR1977365"]
+
+rule all:
+    input:
+        expand("{sample}.gather.csv", sample=SAMPLES)
+
+rule benchmark:
+    input:
+        "{sample}.abundtrim.fq.gz.sig"
+    output:
+        "{sample}.gather.csv"
+    benchmark:
+        "{sample}.csv"
+    shell:
+        "sourmash gather {input} /group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip -o {output}"
+
+
+    
