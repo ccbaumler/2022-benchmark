@@ -1,0 +1,22 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job          count    min threads    max threads
+---------  -------  -------------  -------------
+benchmark        1              1              1
+total            1              1              1
+
+Select jobs to execute...
+
+[Sat Dec 10 18:51:17 2022]
+rule benchmark:
+    input: input/hu/SRR1976948.abundtrim.fq.gz.sig
+    output: output/smk/gather/SRR1976948.gather.csv
+    jobid: 0
+    benchmark: output/smk/bench/SRR1976948.csv
+    reason: Missing output files: output/smk/gather/SRR1976948.gather.csv, output/smk/bench/SRR1976948.csv
+    resources: tmpdir=/tmp
+
+sourmash gather input/hu/SRR1976948.abundtrim.fq.gz.sig /group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip - o output/smk/gather/SRR1976948.gather.csv
