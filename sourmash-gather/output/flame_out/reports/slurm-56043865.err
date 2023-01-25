@@ -1,0 +1,84 @@
+[K
+== This is sourmash version 4.5.0. ==
+[K== Please cite Brown and Irber (2016), doi:10.21105/joss.00027. ==
+
+[Kselecting default query k=31.
+[Kloaded query: SRR1976948.22474 22474/1... (k=31, DNA)
+[Kloading from '/group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip'...[K--
+[Kloaded 65703 total signatures from 1 locations.
+[Kafter selecting signatures compatible with search, 65703 remain.
+[KStarting prefetch sweep across databases.
+[KFound 198 signatures via prefetch; now doing gather.
+[Kfound less than 50.0 kbp in common. => exiting
+Error: No child processes (os error 10)
+
+[K
+== This is sourmash version 4.5.0. ==
+[K== Please cite Brown and Irber (2016), doi:10.21105/joss.00027. ==
+
+[Kselecting default query k=31.
+[Kloaded query: SRR1977249.36 36/2... (k=31, DNA)
+[Kloading from '/group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip'...[K--
+[Kloaded 65703 total signatures from 1 locations.
+[Kafter selecting signatures compatible with search, 65703 remain.
+[KStarting prefetch sweep across databases.
+[KFound 168 signatures via prefetch; now doing gather.
+[Kfound less than 50.0 kbp in common. => exiting
+Error: No child processes (os error 10)
+
+[K
+== This is sourmash version 4.5.0. ==
+[K== Please cite Brown and Irber (2016), doi:10.21105/joss.00027. ==
+
+[Kselecting default query k=31.
+[Kloaded query: SRR1977296.21585 HWI-D00306:15... (k=31, DNA)
+[Kloading from '/group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip'...[K--
+[Kloaded 65703 total signatures from 1 locations.
+[Kafter selecting signatures compatible with search, 65703 remain.
+[KStarting prefetch sweep across databases.
+[KFound 701 signatures via prefetch; now doing gather.
+[Kfound less than 50.0 kbp in common. => exiting
+Error: No child processes (os error 10)
+
+[K
+== This is sourmash version 4.5.0. ==
+[K== Please cite Brown and Irber (2016), doi:10.21105/joss.00027. ==
+
+[Kselecting default query k=31.
+[Kloaded query: SRR1977304.15867 HWI-ST1144:35... (k=31, DNA)
+[Kloading from '/group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip'...[K--
+[Kloaded 65703 total signatures from 1 locations.
+[Kafter selecting signatures compatible with search, 65703 remain.
+[KStarting prefetch sweep across databases.
+[KFound 635 signatures via prefetch; now doing gather.
+[Kfound less than 50.0 kbp in common. => exiting
+Error: No child processes (os error 10)
+
+[K
+== This is sourmash version 4.5.0. ==
+[K== Please cite Brown and Irber (2016), doi:10.21105/joss.00027. ==
+
+[Kselecting default query k=31.
+[Kloaded query: SRR1977357.27455 HWI-ST1144:35... (k=31, DNA)
+[Kloading from '/group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip'...[K--
+[Kloaded 65703 total signatures from 1 locations.
+[Kafter selecting signatures compatible with search, 65703 remain.
+[KStarting prefetch sweep across databases.
+[KFound 74 signatures via prefetch; now doing gather.
+[Kfound less than 50.0 kbp in common. => exiting
+Error: No child processes (os error 10)
+
+[K
+== This is sourmash version 4.5.0. ==
+[K== Please cite Brown and Irber (2016), doi:10.21105/joss.00027. ==
+
+[Kselecting default query k=31.
+[Kloaded query: SRR1977365.31838 HWI-ST1144:35... (k=31, DNA)
+[Kloading from '/group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip'...[K--
+[Kloaded 65703 total signatures from 1 locations.
+[Kafter selecting signatures compatible with search, 65703 remain.
+[KStarting prefetch sweep across databases.
+[KFound 76 signatures via prefetch; now doing gather.
+[Kfound less than 50.0 kbp in common. => exiting
+Error: No child processes (os error 10)
+
