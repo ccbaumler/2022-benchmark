@@ -1,7 +1,0 @@
-[K
-== This is sourmash version 4.5.0. ==
-[K== Please cite Brown and Irber (2016), doi:10.21105/joss.00027. ==
-
-[KCannot open query file '*.abundtrim.fq.gz.sig'
-Error: No child processes (os error 10)
-
