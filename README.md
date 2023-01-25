@@ -5,23 +5,23 @@ benchmarking dib-lab software
 sourmash_gather
 ├───.snakemake
 ├───input
-│   ├───hu
+│   ├───hu (sig files)
 │   └───reports
 ├───output
 │   ├───flame_out
 │   │   ├───csv_files
 │   │   ├───reports
 │   │   └───svg_files
-│   ├───misc
+│   ├───misc  (output from trials)
 │   └───smk_out
-│       ├───bench
+│       ├───bench (metrics data)
 │       └───gather
 └───workflow
-    └───smk
-    └───bench_graphs.ipynb
-    └───flamegraph_job.sh
+    └───smk (snakefile)
+    └───bench_graphs.ipynb (graphs of metrics)
+    └───flamegraph_job.sh  (flamegraph)
     └─── gather_bench.sh
-    └───sketch-fq.sh
+    └───sketch-fq.sh  (sketch sigs)
 
 ```
 
