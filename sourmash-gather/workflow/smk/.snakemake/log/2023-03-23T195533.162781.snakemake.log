@@ -1,0 +1,5 @@
+Building DAG of jobs...
+MissingInputException in rule all  in line 11 of /home/sjnair/2022-benchmark/sourmash-gather/workflow/smk/Snakefile:
+Missing input files for rule all:
+    affected files:
+        ../../output/smk_out/SRR1976948.csv

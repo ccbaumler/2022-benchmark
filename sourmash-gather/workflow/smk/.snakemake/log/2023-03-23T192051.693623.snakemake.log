@@ -1,0 +1,22 @@
+Building DAG of jobs...
+Job stats:
+job          count    min threads    max threads
+---------  -------  -------------  -------------
+all              1              1              1
+benchmark        1              1              1
+profiler         1              1              1
+total            3              1              1
+
+
+[Thu Mar 23 19:20:51 2023]
+rule profiler:
+    input: ../../input/hu/SRR1976948.abundtrim.fq.gz.sig
+    output: ../../output/smk_out/flame/SRR1976948.svg
+    jobid: 2
+    reason: Missing output files: ../../output/smk_out/flame/SRR1976948.svg
+    wildcards: sample=SRR1976948
+    resources: tmpdir=/tmp
+
+RuleException in rule profiler  in line 25 of /home/sjnair/2022-benchmark/sourmash-gather/workflow/smk/Snakefile:
+NameError: The name 'sample' is unknown in this context. Did you mean 'wildcards.sample'?, when formatting the following:
+py-spy record --native -o {output} -- sourmash gather {input} /group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip -o ../../output/smk_out/flame/csv/{sample}.csv 

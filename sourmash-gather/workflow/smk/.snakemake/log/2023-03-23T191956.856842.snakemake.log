@@ -1,0 +1,3 @@
+WildcardError in line 14 of /home/sjnair/2022-benchmark/sourmash-gather/workflow/smk/Snakefile:
+No values given for wildcard 'sample'.
+  File "/home/sjnair/2022-benchmark/sourmash-gather/workflow/smk/Snakefile", line 14, in <module>

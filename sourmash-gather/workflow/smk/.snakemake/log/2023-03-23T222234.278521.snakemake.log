@@ -1,0 +1,50 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 7
+Rules claiming more threads will be scaled down.
+Job stats:
+job          count    min threads    max threads
+---------  -------  -------------  -------------
+all              1              1              1
+benchmark        1              1              1
+profiler         1              1              1
+total            3              1              1
+
+Select jobs to execute...
+
+[Thu Mar 23 22:22:35 2023]
+rule profiler:
+    input: ../../input/hu/SRR1976948.abundtrim.fq.gz.sig
+    output: ../../output/smk_out/flame/SRR1976948.svg
+    jobid: 2
+    reason: Missing output files: ../../output/smk_out/flame/SRR1976948.svg
+    wildcards: sample=SRR1976948
+    resources: tmpdir=/tmp
+
+py-spy record -o ../../output/smk_out/flame/SRR1976948.svg -- sourmash gather ../../input/hu/SRR1976948.abundtrim.fq.gz.sig /group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip -o ../../output/smk_out/flame/csv/SRR1976948.csv 
+
+[Thu Mar 23 22:22:35 2023]
+rule benchmark:
+    input: ../../input/hu/SRR1976948.abundtrim.fq.gz.sig
+    output: ../../output/smk_out/gather/SRR1976948.csv
+    jobid: 1
+    benchmark: ../../output/smk_out/bench/SRR1976948.tsv
+    reason: Missing output files: ../../output/smk_out/gather/SRR1976948.csv
+    wildcards: sample=SRR1976948
+    resources: tmpdir=/tmp
+
+sourmash gather ../../input/hu/SRR1976948.abundtrim.fq.gz.sig /group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip -o ../../output/smk_out/gather/SRR1976948.csv
+[Thu Mar 23 22:34:35 2023]
+Error in rule profiler:
+    jobid: 2
+    input: ../../input/hu/SRR1976948.abundtrim.fq.gz.sig
+    output: ../../output/smk_out/flame/SRR1976948.svg
+    shell:
+        py-spy record -o ../../output/smk_out/flame/SRR1976948.svg -- sourmash gather ../../input/hu/SRR1976948.abundtrim.fq.gz.sig /group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip -o ../../output/smk_out/flame/csv/SRR1976948.csv 
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Mar 23 22:55:24 2023]
+Finished job 1.
+1 of 3 steps (33%) done
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-03-23T222234.278521.snakemake.log
