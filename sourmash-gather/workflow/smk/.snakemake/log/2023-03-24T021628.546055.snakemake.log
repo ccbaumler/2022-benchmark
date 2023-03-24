@@ -1,0 +1,94 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 7
+Rules claiming more threads will be scaled down.
+Job stats:
+job          count    min threads    max threads
+---------  -------  -------------  -------------
+all              1              1              1
+benchmark        6              1              1
+profiler         6              1              1
+total           13              1              1
+
+Select jobs to execute...
+
+[Fri Mar 24 02:16:28 2023]
+rule profiler:
+    input: ../../input/hu/SRR1977296.abundtrim.fq.gz.sig
+    output: ../../output/smk_out/flame/SRR1977296.svg
+    jobid: 8
+    reason: Missing output files: ../../output/smk_out/flame/SRR1977296.svg
+    wildcards: sample=SRR1977296
+    resources: tmpdir=/tmp
+
+py-spy record -o ../../output/smk_out/flame/SRR1977296.svg -- sourmash gather ../../input/hu/SRR1977296.abundtrim.fq.gz.sig /group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip -o ../../output/smk_out/flame/csv/SRR1977296.csv 
+
+[Fri Mar 24 02:16:28 2023]
+rule profiler:
+    input: ../../input/hu/SRR1977357.abundtrim.fq.gz.sig
+    output: ../../output/smk_out/flame/SRR1977357.svg
+    jobid: 9
+    reason: Missing output files: ../../output/smk_out/flame/SRR1977357.svg
+    wildcards: sample=SRR1977357
+    resources: tmpdir=/tmp
+
+py-spy record -o ../../output/smk_out/flame/SRR1977357.svg -- sourmash gather ../../input/hu/SRR1977357.abundtrim.fq.gz.sig /group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip -o ../../output/smk_out/flame/csv/SRR1977357.csv 
+
+[Fri Mar 24 02:16:28 2023]
+rule profiler:
+    input: ../../input/hu/SRR1977304.abundtrim.fq.gz.sig
+    output: ../../output/smk_out/flame/SRR1977304.svg
+    jobid: 11
+    reason: Missing output files: ../../output/smk_out/flame/SRR1977304.svg
+    wildcards: sample=SRR1977304
+    resources: tmpdir=/tmp
+
+py-spy record -o ../../output/smk_out/flame/SRR1977304.svg -- sourmash gather ../../input/hu/SRR1977304.abundtrim.fq.gz.sig /group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip -o ../../output/smk_out/flame/csv/SRR1977304.csv 
+
+[Fri Mar 24 02:16:28 2023]
+rule benchmark:
+    input: ../../input/hu/SRR1977296.abundtrim.fq.gz.sig
+    output: ../../output/smk_out/gather/SRR1977296.csv
+    jobid: 2
+    benchmark: ../../output/smk_out/bench/SRR1977296.tsv
+    reason: Missing output files: ../../output/smk_out/gather/SRR1977296.csv
+    wildcards: sample=SRR1977296
+    resources: tmpdir=/tmp
+
+sourmash gather ../../input/hu/SRR1977296.abundtrim.fq.gz.sig /group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip -o ../../output/smk_out/gather/SRR1977296.csv
+
+[Fri Mar 24 02:16:28 2023]
+rule benchmark:
+    input: ../../input/hu/SRR1977357.abundtrim.fq.gz.sig
+    output: ../../output/smk_out/gather/SRR1977357.csv
+    jobid: 3
+    benchmark: ../../output/smk_out/bench/SRR1977357.tsv
+    reason: Missing output files: ../../output/smk_out/gather/SRR1977357.csv
+    wildcards: sample=SRR1977357
+    resources: tmpdir=/tmp
+
+sourmash gather ../../input/hu/SRR1977357.abundtrim.fq.gz.sig /group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip -o ../../output/smk_out/gather/SRR1977357.csv
+
+[Fri Mar 24 02:16:28 2023]
+rule benchmark:
+    input: ../../input/hu/SRR1977249.abundtrim.fq.gz.sig
+    output: ../../output/smk_out/gather/SRR1977249.csv
+    jobid: 4
+    benchmark: ../../output/smk_out/bench/SRR1977249.tsv
+    reason: Missing output files: ../../output/smk_out/gather/SRR1977249.csv
+    wildcards: sample=SRR1977249
+    resources: tmpdir=/tmp
+
+sourmash gather ../../input/hu/SRR1977249.abundtrim.fq.gz.sig /group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip -o ../../output/smk_out/gather/SRR1977249.csv
+
+[Fri Mar 24 02:16:29 2023]
+rule benchmark:
+    input: ../../input/hu/SRR1977365.abundtrim.fq.gz.sig
+    output: ../../output/smk_out/gather/SRR1977365.csv
+    jobid: 6
+    benchmark: ../../output/smk_out/bench/SRR1977365.tsv
+    reason: Missing output files: ../../output/smk_out/gather/SRR1977365.csv
+    wildcards: sample=SRR1977365
+    resources: tmpdir=/tmp
+
+sourmash gather ../../input/hu/SRR1977365.abundtrim.fq.gz.sig /group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip -o ../../output/smk_out/gather/SRR1977365.csv

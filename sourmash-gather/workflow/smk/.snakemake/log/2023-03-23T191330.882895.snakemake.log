@@ -1,0 +1,7 @@
+Building DAG of jobs...
+MissingInputException in rule benchmark  in line 15 of /home/sjnair/2022-benchmark/sourmash-gather/workflow/smk/Snakefile:
+Missing input files for rule benchmark:
+    output: ../output/smk_out/SRR1976948.csv
+    wildcards: sample=SRR1976948
+    affected files:
+        ../input/hu/SRR1976948.abundtrim.fq.gz.sig
