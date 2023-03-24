@@ -28,7 +28,7 @@ rule profiler:
     output:
         output_dir+"flame/{sample}.svg"
     shell:
-        "py-spy record -o {output} -- sourmash gather {input} /group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip -o "+output_dir+"flame/csv/{wildcards.sample}.csv "
+        "py-spy record --native -o {output} -- sourmash gather {input} /group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip -o "+output_dir+"flame/csv/{wildcards.sample}.csv "
 
 
     
