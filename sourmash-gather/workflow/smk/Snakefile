@@ -2,22 +2,33 @@
 
 #SAMPLES, =glob_wildcards("input/hu/{sample}.abundtrim.fq.gz.sig")
 #print(f"samples are:{SAMPLES}")
-SAMPLES = ["SRR1976948", "SRR1977296","SRR1977357","SRR1977249","SRR1977304","SRR1977365"]
-#SAMPLES = ['SRR1976948']
+#SAMPLES = ["SRR1976948", "SRR1977296","SRR1977357","SRR1977249","SRR1977304","SRR1977365"]
+SAMPLES = ['SRR1976948']
 
+output_dir = '../output/smk_out/'
+input_dir =  '../input/hu/'
+database = '/group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip'
 rule all:
     input:
-        expand("gather/{sample}.gather.csv", sample=SAMPLES)
+        expand("{sample}.csv", sample=SAMPLES)
 
 rule benchmark:
     input:
-        "{sample}.abundtrim.fq.gz.sig"
+        "{input_dir}/{sample}.abundtrim.fq.gz.sig"
     output:
-        "gather/{sample}.gather.csv"
+        "{output_dir}/{sample}.gather.csv"
     benchmark:
-        repeat("bench/{sample}.tsv",3)
+        repeat("{output_dir}/bench/{sample}.tsv",3)
     shell:
-        "sourmash gather {input} /group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip -o {output}"
+        "sourmash gather {input} {database} -o {output}"
+
+rule profiler:
+    input:
+        "{input_dir}/{sample}.abundtrim.fq.gz.sig"
+    output:
+        "{output_dir}/flame/{sample}.svg"
+    shell:
+        "py-spy record --native -o {output} -- sourmash gather {input} {database} -o ${output_dir}/flame/csv/{sample}.csv "
 
 
     
