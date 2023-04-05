@@ -1,0 +1,97 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count    min threads    max threads
+----------------  -------  -------------  -------------
+all                     1              1              1
+benchmark_trial1        1              1              1
+benchmark_trial2        1              1              1
+benchmark_trial3        1              1              1
+profiler                1              1              1
+total                   5              1              1
+
+Select jobs to execute...
+
+[Tue Apr  4 22:53:21 2023]
+rule benchmark_trial2:
+    input: ../../input/hu/SRR1976948.abundtrim.fq.gz.sig
+    output: ../../output/smk_out/gather/SRR1976948_trial2.csv
+    jobid: 2
+    reason: Missing output files: ../../output/smk_out/gather/SRR1976948_trial2.csv
+    wildcards: sample=SRR1976948
+    resources: tmpdir=/tmp
+
+sourmash gather ../../input/hu/SRR1976948.abundtrim.fq.gz.sig '/group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip -o ../../output/smk_out/gather/SRR1976948_trial2.csv
+
+[Tue Apr  4 22:53:21 2023]
+rule benchmark_trial1:
+    input: ../../input/hu/SRR1976948.abundtrim.fq.gz.sig
+    output: ../../output/smk_out/gather/SRR1976948_trial1.csv
+    jobid: 1
+    reason: Missing output files: ../../output/smk_out/gather/SRR1976948_trial1.csv
+    wildcards: sample=SRR1976948
+    resources: tmpdir=/tmp
+
+sourmash gather ../../input/hu/SRR1976948.abundtrim.fq.gz.sig '/group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip -o ../../output/smk_out/gather/SRR1976948_trial1.csv
+
+[Tue Apr  4 22:53:21 2023]
+rule benchmark_trial3:
+    input: ../../input/hu/SRR1976948.abundtrim.fq.gz.sig
+    output: ../../output/smk_out/gather/SRR1976948_trial3.csv
+    jobid: 3
+    reason: Missing output files: ../../output/smk_out/gather/SRR1976948_trial3.csv
+    wildcards: sample=SRR1976948
+    resources: tmpdir=/tmp
+
+sourmash gather ../../input/hu/SRR1976948.abundtrim.fq.gz.sig '/group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip -o ../../output/smk_out/gather/SRR1976948_trial3.csv
+[Tue Apr  4 22:53:21 2023]
+Error in rule benchmark_trial2:
+    jobid: 2
+    input: ../../input/hu/SRR1976948.abundtrim.fq.gz.sig
+    output: ../../output/smk_out/gather/SRR1976948_trial2.csv
+    shell:
+        sourmash gather ../../input/hu/SRR1976948.abundtrim.fq.gz.sig '/group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip -o ../../output/smk_out/gather/SRR1976948_trial2.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Apr  4 22:53:21 2023]
+Error in rule benchmark_trial1:
+    jobid: 1
+    input: ../../input/hu/SRR1976948.abundtrim.fq.gz.sig
+    output: ../../output/smk_out/gather/SRR1976948_trial1.csv
+    shell:
+        sourmash gather ../../input/hu/SRR1976948.abundtrim.fq.gz.sig '/group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip -o ../../output/smk_out/gather/SRR1976948_trial1.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Tue Apr  4 22:53:21 2023]
+rule profiler:
+    input: ../../input/hu/SRR1976948.abundtrim.fq.gz.sig
+    output: ../../output/smk_out/flame/SRR1976948.svg
+    jobid: 4
+    reason: Missing output files: ../../output/smk_out/flame/SRR1976948.svg
+    wildcards: sample=SRR1976948
+    resources: tmpdir=/tmp
+
+py-spy record --native -o ../../output/smk_out/flame/SRR1976948.svg -- sourmash gather ../../input/hu/SRR1976948.abundtrim.fq.gz.sig '/group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip -o ../../output/smk_out/flame/csv/SRR1976948.csv 
+[Tue Apr  4 22:53:21 2023]
+Error in rule benchmark_trial3:
+    jobid: 3
+    input: ../../input/hu/SRR1976948.abundtrim.fq.gz.sig
+    output: ../../output/smk_out/gather/SRR1976948_trial3.csv
+    shell:
+        sourmash gather ../../input/hu/SRR1976948.abundtrim.fq.gz.sig '/group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip -o ../../output/smk_out/gather/SRR1976948_trial3.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Apr  4 22:53:21 2023]
+Error in rule profiler:
+    jobid: 4
+    input: ../../input/hu/SRR1976948.abundtrim.fq.gz.sig
+    output: ../../output/smk_out/flame/SRR1976948.svg
+    shell:
+        py-spy record --native -o ../../output/smk_out/flame/SRR1976948.svg -- sourmash gather ../../input/hu/SRR1976948.abundtrim.fq.gz.sig '/group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip -o ../../output/smk_out/flame/csv/SRR1976948.csv 
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-04-04T225321.607308.snakemake.log
