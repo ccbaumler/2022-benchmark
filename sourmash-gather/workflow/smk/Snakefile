@@ -1,5 +1,5 @@
 #SAMPLES = ["SRR1976948", "SRR1977296","SRR1977357","SRR1977249","SRR1977304","SRR1977365"]
-
+SAMPLES = ["SRR1976948"]
 output_dir = '../../output/smk_out/'
 input_dir =  '../../input/hu/'
 database = '/group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip'
