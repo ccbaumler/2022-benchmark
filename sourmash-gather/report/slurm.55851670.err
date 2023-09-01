@@ -1,6 +1,0 @@
-[K
-== This is sourmash version 4.5.0. ==
-[K== Please cite Brown and Irber (2016), doi:10.21105/joss.00027. ==
-
-[KCannot open query file '/input/hu/SRR1976948.abundtrim.fq.gz.sig'
-/var/spool/slurmd/job55851670/slurm_script: line 29: py-spy: command not found
