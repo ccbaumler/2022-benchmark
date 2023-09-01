@@ -1,0 +1,26 @@
+==========================================
+SLURM_JOB_ID = 55851568
+SLURM_NODELIST = bm2
+==========================================
+Name                : gather_flame
+User                : baumlerc
+Account             : ctbrowngrp
+Partition           : bmh
+Nodes               : bm2
+Cores               : 4
+GPUs                : 0
+State               : FAILED
+ExitCode            : 127:0
+Submit              : 2022-11-07T09:09:07
+Start               : 2022-11-07T09:09:07
+End                 : 2022-11-07T09:09:48
+Waited              :   00:00:00
+Reserved walltime   : 1-12:00:00
+Used walltime       :   00:00:41
+Used CPU time       :   00:00:06
+% User (Computation): 69.31%
+% System (I/O)      : 30.67%
+Mem reserved        : 60G
+Max Mem used        : 16.93M (bm2)
+Max Disk Write      : 40.96K (bm2)
+Max Disk Read       : 25.29M (bm2)

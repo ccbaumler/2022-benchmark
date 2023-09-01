@@ -24,7 +24,7 @@ rule benchmark_trial1:
     benchmark:
         output_dir+"bench/{sample}_trial1.tsv"
     shell:
-        "sourmash gather {input} /group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip -o {output}"
+        "sourmash gather {input} "+database+" -o {output}"
 
 # Rule to generate gather output for benchmark trial 2
 rule benchmark_trial2:

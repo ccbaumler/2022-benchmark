@@ -1,0 +1,13 @@
+[K
+== This is sourmash version 4.5.0. ==
+[K== Please cite Brown and Irber (2016), doi:10.21105/joss.00027. ==
+
+[Kselecting default query k=31.
+[Kloaded query: SRR1976948.22474 22474/1... (k=31, DNA)
+[Kloading from '/group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip'...[K--
+[Kloaded 65703 total signatures from 1 locations.
+[Kafter selecting signatures compatible with search, 65703 remain.
+[KStarting prefetch sweep across databases.
+[KFound 198 signatures via prefetch; now doing gather.
+[Kfound less than 50.0 kbp in common. => exiting
+Error: No child processes (os error 10)
