@@ -1,0 +1,22 @@
+Name                : gather_flame
+User                : baumlerc
+Account             : ctbrowngrp
+Partition           : bmh
+Nodes               : bm10
+Cores               : 4
+GPUs                : 0
+State               : FAILED
+ExitCode            : 2:0
+Submit              : 2022-11-07T09:38:47
+Start               : 2022-11-07T09:38:47
+End                 : 2022-11-07T09:39:02
+Waited              :   00:00:00
+Reserved walltime   : 1-12:00:00
+Used walltime       :   00:00:15
+Used CPU time       :   00:00:02
+% User (Computation): 68.30%
+% System (I/O)      :  0.00%
+Mem reserved        : 60G
+Max Mem used        : 0.00  (bm10)
+Max Disk Write      : 0.00  (bm10)
+Max Disk Read       : 0.00  (bm10)

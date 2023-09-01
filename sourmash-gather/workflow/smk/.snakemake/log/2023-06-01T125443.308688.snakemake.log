@@ -1,0 +1,38 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count    min threads    max threads
+----------------  -------  -------------  -------------
+all                     1              1              1
+benchmark_trial1        6              1              1
+benchmark_trial2        6              1              1
+benchmark_trial3        6              1              1
+profiler                6              1              1
+total                  25              1              1
+
+Select jobs to execute...
+
+[Thu Jun  1 12:54:44 2023]
+rule benchmark_trial2:
+    input: ../../input/hu/SRR1977357.abundtrim.fq.gz.sig
+    output: ../../output/smk_out/gather/SRR1977357_trial2.csv
+    jobid: 9
+    benchmark: ../../output/smk_out/bench/SRR1977357_trial2.tsv
+    reason: Code has changed since last execution
+    wildcards: sample=SRR1977357
+    resources: tmpdir=/tmp
+
+[Thu Jun  1 12:54:44 2023]
+Error in rule benchmark_trial2:
+    jobid: 9
+    input: ../../input/hu/SRR1977357.abundtrim.fq.gz.sig
+    output: ../../output/smk_out/gather/SRR1977357_trial2.csv
+    shell:
+        sourmash gather ../../input/hu/SRR1977357.abundtrim.fq.gz.sig /group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip -o ../../output/smk_out/gather/SRR1977357_trial2.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-06-01T125443.308688.snakemake.log

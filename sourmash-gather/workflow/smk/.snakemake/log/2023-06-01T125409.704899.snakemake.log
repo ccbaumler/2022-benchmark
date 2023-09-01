@@ -1,0 +1,14 @@
+Building DAG of jobs...
+IncompleteFilesException:
+The files below seem to be incomplete. If you are sure that certain files are not incomplete, mark them as complete with
+
+    snakemake --cleanup-metadata <filenames>
+
+To re-generate the files rerun your command with the --rerun-incomplete flag.
+Incomplete files:
+../../output/smk_out/flame/SRR1976948.svg
+../../output/smk_out/flame/SRR1977296.svg
+../../output/smk_out/flame/SRR1977357.svg
+../../output/smk_out/flame/SRR1977249.svg
+../../output/smk_out/flame/SRR1977304.svg
+../../output/smk_out/flame/SRR1977365.svg
